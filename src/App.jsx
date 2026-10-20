@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ArrowDown, ArrowRight, ArrowUpRight, BadgeCheck, CalendarDays, CarFront, Check, CheckCircle2, ChevronDown, Clock3, Headphones, MapPin, Menu, MessageCircle, Navigation, Phone, ShieldCheck, Sparkles, Users, Wallet, X } from 'lucide-react'
 
 const routes = [
@@ -40,7 +40,15 @@ export default function App() {
   const [notice, setNotice] = useState('')
   const [noticeType, setNoticeType] = useState('success')
   const [submitting, setSubmitting] = useState(false)
+  const [bookingVisible, setBookingVisible] = useState(false)
   const today = new Date().toISOString().slice(0,10)
+  useEffect(() => {
+    const form = document.querySelector('.booking-form')
+    if (!form || !('IntersectionObserver' in window)) return
+    const observer = new IntersectionObserver(([entry]) => setBookingVisible(entry.isIntersecting), { threshold: 0.08 })
+    observer.observe(form)
+    return () => observer.disconnect()
+  }, [])
   const submit = async (e) => {
     e.preventDefault()
     const form = e.currentTarget
@@ -87,7 +95,7 @@ export default function App() {
     </main>
 
     <footer className="footer"><div className="footer-grid"><div><a className="brand footer-brand" href="#home"><img className="brand-logo" src="/brand-logo.png" alt="Logo Nhà xe Minh Châu"/><span>XE GHÉP <b>HÀ NAM</b><small>CHUYẾN ĐI AN TÂM</small></span></a><p>Phục vụ mọi lúc, mọi nơi. Dịch vụ nhanh, an toàn — Giá hợp lý — Tài xế thân thiện.</p><div className="footer-badges"><span><ShieldCheck/> Hoạt động 24/7</span><span><BadgeCheck/> Bảo đảm giá tốt</span></div></div><div><h4>THÔNG TIN LIÊN HỆ</h4><p><MapPin/> Địa chỉ: Thành phố Phủ Lý, Hà Nam</p><p><Phone/> SĐT: <a href="tel:0976557789">0976 557 789</a></p><p><MessageCircle/> Email: <a href="mailto:datxe@dichvu247.vn">datxe@dichvu247.vn</a></p></div><div><h4>LIÊN KẾT NHANH</h4><a href="#home">Trang chủ</a><a href="#why">Dịch vụ của chúng tôi</a><a href="#trips">Lộ trình hàng ngày</a><a href="#routes">Chính sách bảo mật</a><a href="#contact">Chính sách dịch vụ</a><a href="#contact">Điều khoản dịch vụ</a></div></div><div className="footer-bottom"><span>© 2024 dichvuxe247. Bảo lưu mọi quyền.</span><span><ShieldCheck/> Tốc độ & An toàn <b>·</b> <Clock3/> Tuyến 24/7</span></div></footer>
-    <a className="floating-zalo" href="https://zalo.me/0976557789" target="_blank" rel="noreferrer" aria-label="Chat Zalo với số 0976557789"><span>Zalo</span><i className="zalo-ping"/></a>
-    <a className="floating-call" href="tel:0976557789" aria-label="Gọi hotline"><Phone size={21}/><span className="call-ping"/></a>
+    <a className={`floating-zalo${bookingVisible ? ' floating-hidden' : ''}`} href="https://zalo.me/0976557789" target="_blank" rel="noreferrer" aria-label="Chat Zalo với số 0976557789"><span>Zalo</span><i className="zalo-ping"/></a>
+    <a className={`floating-call${bookingVisible ? ' floating-hidden' : ''}`} href="tel:0976557789" aria-label="Gọi hotline"><Phone size={21}/><span className="call-ping"/></a>
   </div>
 }
