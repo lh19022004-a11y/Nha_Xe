@@ -15,6 +15,28 @@
 @media(max-width:760px){.hero-banner{min-height:440px;padding:58px 18px}.hero-banner h1{font-size:clamp(26px,7vw,38px);letter-spacing:-.6px}.hero-banner .hero-lede{font-size:12px}.hero-promise{font-size:11px}.hero-call{min-width:0;width:min(100%,330px);font-size:19px;padding:14px 16px}.hero-call b{font-size:21px}}
 
 @media(max-width:760px){
+  .routes.section{padding:38px 12px}
+  .routes .section-heading{margin-bottom:17px}
+  .routes .section-heading h2{font-size:21px;line-height:1.25}
+  .routes .section-heading>p{font-size:11px;line-height:1.55}
+  .table-wrap{margin:0;overflow:hidden;border:1px solid #e2e8f0;border-radius:9px;background:#fff;box-shadow:0 3px 12px #142e4b0b}
+  .table-wrap table{display:table;width:100%;min-width:0;table-layout:fixed;border-collapse:collapse;font-size:10px}
+  .table-wrap thead{display:table-header-group}
+  .table-wrap thead tr{display:table-row}
+  .table-wrap th{display:table-cell;padding:9px 3px;background:#132d55;color:#fff;text-align:center;font-size:8px;line-height:1.25;letter-spacing:0;text-transform:uppercase;white-space:normal;border:0}
+  .table-wrap th:first-child{width:36%;text-align:left;padding-left:8px}
+  .table-wrap th:nth-child(2),.table-wrap th:nth-child(3),.table-wrap th:nth-child(4){width:21.33%}
+  .table-wrap th:last-child,.table-wrap td.mobile-book{display:none}
+  .table-wrap tbody{display:table-row-group}
+  .table-wrap tr{display:table-row;background:#fff;border:0;border-radius:0;box-shadow:none}
+  .table-wrap tr:nth-child(even){background:#f2f5f9}
+  .table-wrap td{display:table-cell;min-width:0;padding:10px 3px;text-align:center;font-size:10px;line-height:1.25;white-space:normal;border:0;border-bottom:1px solid #e5eaf0}
+  .table-wrap td:first-child{width:36%;padding:10px 5px 10px 8px;text-align:left;background:transparent;color:#19365c;font-size:10px;font-weight:700;white-space:normal}
+  .table-wrap td:not(:first-child)::before{display:none}
+  .table-wrap .green-text,.table-wrap .blue-text,.table-wrap .gold-text{font-size:10px;font-weight:800;overflow-wrap:anywhere}
+  .row-number{color:#718096}
+  .price-notes{margin-top:12px}
+  .table-footnote{font-size:10px;line-height:1.55}
   body{min-width:320px}
   .booking-form{width:100%;min-width:0;padding:18px 15px}
   .form-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 11px}
