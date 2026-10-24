@@ -261,3 +261,24 @@
 @media(max-width:760px){
   .routes .table-wrap th:last-child{display:table-cell}
 }
+
+/* Final mobile grid reset.  Exactly four equal price columns are retained;
+   no element may turn into a block or be hidden on a phone. */
+@media(max-width:760px){
+  .routes.section{padding-left:24px;padding-right:24px}
+  .routes .table-wrap{width:100%;margin:0;overflow:hidden;border:2px solid #a8a8a8;border-radius:0;background:#fff}
+  .routes .table-wrap table{display:table!important;width:100%!important;min-width:0!important;table-layout:fixed!important;border-collapse:collapse!important;white-space:normal!important}
+  .routes .table-wrap thead{display:table-header-group!important}
+  .routes .table-wrap tbody{display:table-row-group!important}
+  .routes .table-wrap tr{display:table-row!important}
+  .routes .table-wrap th,.routes .table-wrap td{display:table-cell!important;width:25%!important;min-width:0!important;box-sizing:border-box!important;white-space:normal!important;overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important;text-align:center!important;vertical-align:middle!important}
+  .routes .table-wrap th{padding:13px 3px!important;background:#1873ca!important;color:#fff!important;border-right:2px solid #a8a8a8!important;border-bottom:2px solid #a8a8a8!important;font-size:11px!important;font-weight:800!important;line-height:1.28!important;letter-spacing:0!important}
+  .routes .table-wrap td{padding:19px 3px!important;background:#fff!important;border-right:2px solid #a8a8a8!important;border-bottom:2px solid #a8a8a8!important;color:#101010!important;font-size:13px!important;font-weight:800!important;line-height:1.38!important}
+  .routes .table-wrap th:first-child,.routes .table-wrap td:first-child{padding-left:3px!important;text-align:center!important}
+  .routes .table-wrap td:first-child{font-size:13px!important}
+  .routes .table-wrap th:last-child,.routes .table-wrap td:last-child{display:table-cell!important;border-right:0!important}
+  .routes .table-wrap tbody tr:last-child td{border-bottom:0!important}
+  .routes .table-wrap tr:nth-child(even),.routes .table-wrap tr:nth-child(even) td{background:#fff!important}
+  .routes .table-wrap .green-text,.routes .table-wrap .blue-text,.routes .table-wrap .gold-text{display:table-cell!important;max-width:none!important;margin:0!important;color:#101010!important;font-size:13px!important;font-weight:800!important;line-height:1.38!important;overflow-wrap:normal!important;word-break:normal!important}
+  .routes .table-wrap .row-number{color:#101010!important}
+}
