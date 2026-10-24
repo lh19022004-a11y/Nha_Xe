@@ -59,3 +59,205 @@
   .floating-actions .floating-zalo{font-size:11px}
   .floating-actions .floating-call svg{width:19px;height:19px}
 }
+
+/* Ưu tiên khả năng đọc trên điện thoại ở các thẻ nội dung chính. */
+.trip-code,.trip-distance{font-size:10px;font-weight:800}
+.trip-body{padding:15px}
+.trip-body h3{font-size:15px;font-weight:800;line-height:1.35;margin-bottom:7px}
+.trip-desc{font-size:11px;font-weight:600;line-height:1.6;margin-bottom:11px;min-height:36px;color:#536681}
+.trip-body ul{gap:7px}
+.trip-body li{font-size:10px;font-weight:600;line-height:1.35}
+.trip-body li svg{width:13px;height:13px;flex:0 0 13px}
+.trip-button{font-size:11px;font-weight:800;padding:11px;margin-top:13px}
+
+.benefit-card h3{font-size:14px;font-weight:800;line-height:1.35;margin-bottom:9px}
+.benefit-card p{font-size:11px;font-weight:600;line-height:1.7;color:#536681}
+
+@media(max-width:760px){
+  .trip-body{padding:12px}
+  .trip-body h3{font-size:13px}
+  .trip-desc{font-size:10px;min-height:32px}
+  .trip-body li{font-size:9px}
+  .trip-button{font-size:10px;padding:10px}
+  .benefit-card h3{font-size:12px}
+  .benefit-card p{font-size:10px}
+}
+
+/* Bảng giá trên điện thoại: lưới 4 cột đồng đều, dễ so sánh từng mức giá. */
+@media(max-width:760px){
+  .routes.section{padding-inline:12px}
+  .table-wrap{overflow:hidden;border:2px solid #aeb4bc;border-radius:0;box-shadow:none}
+  .table-wrap table{table-layout:fixed;font-size:12px}
+  .table-wrap th{width:25% !important;padding:13px 4px;background:#62c69a;color:#b61922;text-align:center !important;font-size:11px;font-weight:800;line-height:1.28}
+  .table-wrap th:first-child{padding-left:4px;text-align:center !important}
+  .table-wrap td{width:25% !important;padding:15px 4px;text-align:center !important;vertical-align:middle;background:#fff;border-right:2px solid #aeb4bc;border-bottom:2px solid #aeb4bc;font-size:12px;font-weight:800;line-height:1.38}
+  .table-wrap td:first-child{padding:15px 4px;text-align:center !important;background:#fff;color:#111;font-size:13px;font-weight:800}
+  .table-wrap tr:nth-child(even),.table-wrap tr:nth-child(even) td{background:#fff}
+  .table-wrap th:last-child,.table-wrap td:last-child{border-right:0}
+  .table-wrap tbody tr:last-child td{border-bottom:0}
+  .table-wrap .green-text,.table-wrap .blue-text,.table-wrap .gold-text{display:block;max-width:74px;margin:auto;font-size:13px;font-weight:800;line-height:1.45;color:#111}
+  .table-wrap .row-number{color:#111}
+}
+
+/* Header và banner theo cấu trúc trang tham chiếu, dùng nhận diện riêng Minh Châu. */
+.reference-topbar{height:112px;background:#fff;border:0;box-shadow:0 1px 8px #10213d16}
+.reference-topbar .nav-wrap{max-width:1390px;padding:0 56px;gap:28px}
+.reference-topbar .brand{font-size:19px;letter-spacing:-.45px}
+.reference-topbar .brand-logo{width:172px;height:78px;object-fit:contain;object-position:left center;border-radius:0}
+.reference-topbar .brand small{font-size:9px;margin-top:5px}
+.reference-topbar .nav-links{margin-left:auto;margin-right:0;gap:28px;font-size:15px;font-weight:800;color:#1d2430}
+.reference-topbar .nav-links a{padding:10px 0}
+.reference-topbar .nav-phone{display:none}
+.reference-topbar .nav-cta{display:none}
+.reference-topbar .account-icon{display:none}
+
+.reference-hero{isolation:isolate;min-height:510px;padding:42px 28px 54px;background-position:center;background-size:cover}
+.reference-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#08182a99 0%,#0d1d2c65 48%,#07111cb0 100%)}
+.reference-hero .hero-grid{display:block;max-width:1000px;height:100%}
+.reference-hero .hero-copy{max-width:860px;padding-top:10px;text-align:center}
+.reference-hero .hero-kicker{background:#ffffffde;border:0;color:#173960;font-size:11px}
+.reference-hero h1{margin:18px auto 17px;color:#fff;font-size:clamp(30px,4vw,52px);line-height:1.15;letter-spacing:.2px;text-shadow:0 2px 9px #07101a88}
+.reference-hero h1 .hero-brand-name,.reference-hero h1 .hero-route-name{display:block;color:#fff}
+.reference-hero h1 .hero-brand-name{font-size:1.18em;letter-spacing:1px}
+.reference-hero h1 .hero-route-name{margin-top:8px;font-size:.56em;font-weight:700;line-height:1.4;text-transform:none;letter-spacing:0}
+.reference-hero .hero-lede{max-width:780px;color:#fff;font-size:17px;font-weight:600;line-height:1.65;text-shadow:0 2px 7px #07101a9e}
+.reference-hero .hero-lede b{color:#fff}
+.reference-hero .hero-promise{color:#fff;font-size:13px;text-shadow:0 2px 7px #07101a9e}
+.reference-hero .hero-actions{margin-top:28px}
+.reference-hero .hero-call{min-width:420px;padding:20px 30px;border-radius:7px;background:#fff;color:#111;font-size:27px;font-weight:700;box-shadow:0 11px 25px #0005}
+.reference-hero .hero-call b{font-size:30px;color:#111}
+
+@media(max-width:900px){
+  .reference-topbar{height:76px}
+  .reference-topbar .nav-wrap{padding:0 20px}
+  .reference-topbar .brand-logo{width:132px;height:62px}
+  .reference-topbar .brand{font-size:14px}
+  .reference-topbar .nav-links{gap:15px;font-size:12px}
+}
+
+@media(max-width:760px){
+  .reference-topbar{height:74px}
+  .reference-topbar .nav-wrap{padding:0 16px}
+  .reference-topbar .brand{font-size:13px}
+  .reference-topbar .brand-logo{width:124px;height:58px}
+  .reference-topbar .mobile-menu{display:grid;background:#fff;color:#111;border:0;width:42px;height:42px}
+  .reference-topbar .nav-links{top:74px;padding:8px 18px 16px;background:#fff;box-shadow:0 10px 20px #13284924}
+  .reference-topbar .nav-links.open{display:flex;flex-direction:column}
+  .reference-topbar .nav-links a{padding:13px 4px;font-size:13px}
+  .reference-hero{min-height:510px;padding:42px 18px}
+  .reference-hero .hero-copy{padding-top:0}
+  .reference-hero h1{font-size:clamp(29px,8.4vw,41px);line-height:1.14}
+  .reference-hero h1 .hero-route-name{margin-top:9px;font-size:.58em;line-height:1.35}
+  .reference-hero .hero-lede{font-size:14px;line-height:1.65}
+  .reference-hero .hero-promise{font-size:11px;line-height:1.5}
+  .reference-hero .hero-call{width:min(100%,360px);min-width:0;padding:16px 15px;font-size:20px}
+  .reference-hero .hero-call b{font-size:23px}
+}
+
+/* Các phần nội dung theo bố cục landing page truyền thống của trang tham chiếu. */
+.routes,.trips,.why,.booking{background:#fff}
+.routes.section,.trips.section,.why.section{padding:56px 32px}
+.routes .section-heading,.trips .section-heading,.why .section-heading{max-width:1080px;margin:0 auto 30px;text-align:left}
+.routes .section-heading .eyebrow,.trips .section-heading .eyebrow,.why .section-heading .eyebrow{padding:0;background:transparent;color:#11965d;font-size:11px;letter-spacing:.6px}
+.routes .section-heading h2,.trips .section-heading h2,.why .section-heading h2{position:relative;margin:7px 0 24px;padding-bottom:13px;color:#111;font-size:27px;letter-spacing:0;text-align:left}
+.routes .section-heading h2:after,.trips .section-heading h2:after,.why .section-heading h2:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#95d6bc}
+.routes .section-heading>p,.trips .section-heading>p,.why .section-heading>p{max-width:100%;color:#171717;font-size:15px;font-weight:500;line-height:1.65;text-align:left}
+
+.routes .table-wrap{max-width:1080px;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.routes table{font-size:15px;white-space:normal;border:1px solid #a8a8a8}
+.routes th{padding:16px 12px;background:#63c99d;color:#c61c26;border:1px solid #a8a8a8;font-size:14px;font-weight:800;text-align:center}
+.routes td{padding:17px 12px;border:1px solid #a8a8a8;color:#111;font-weight:700;text-align:center}
+.routes td:first-child{font-weight:800;text-align:center}
+.routes tbody tr:nth-child(even),.routes tbody tr:hover{background:#fff}
+.routes .green-text,.routes .blue-text,.routes .gold-text{color:#111;font-weight:800}
+.routes .table-book{padding:8px 14px;border-radius:0;background:#009b51;font-size:11px}
+.routes .price-notes{max-width:1080px;margin-top:22px;gap:18px}
+.routes .price-notes>div{border:0;border-radius:0;background:#f5fbf7}
+.routes .table-footnote{max-width:1080px;font-size:12px;color:#d1242f}
+
+.trips{border-top:1px solid #f2f2f2}
+.trip-grid{max-width:1080px;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.trip-card{border:0;border-radius:0;background:transparent;overflow:visible;box-shadow:none}
+.trip-card:hover{transform:none;box-shadow:none}
+.trip-image{height:230px;border-radius:22px;overflow:hidden}
+.trip-image img{border-radius:22px}
+.trip-image:after{inset:0;background:linear-gradient(180deg,#08182a0b,#07111b55)}
+.trip-code,.trip-distance{font-size:10px}
+.trip-body{padding:12px 0 0}
+.trip-body h3{color:#111;font-size:20px;margin-bottom:7px}
+.trip-desc{color:#2d2d2d;font-size:13px;min-height:0;margin-bottom:9px}
+.trip-body ul{gap:5px}
+.trip-body li{color:#333;font-size:12px}
+.trip-button{width:auto;padding:10px 22px;border-radius:0;margin-top:13px;background:#009b51;font-size:12px}
+.safe-note{font-size:13px}
+
+.why{border-top:1px solid #f2f2f2}
+.benefit-grid{max-width:1080px;gap:0;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5}
+.benefit-card{min-height:0;padding:26px 22px;border:0;border-right:1px solid #e5e5e5;border-radius:0;background:#fff}
+.benefit-card:last-child{border-right:0}
+.benefit-icon{width:auto;height:auto;margin:0 0 12px;background:transparent!important;color:#009b51}
+.benefit-icon svg{width:31px;height:31px}
+.benefit-card h3{color:#009b51;font-size:17px}
+.benefit-card p{color:#222;font-size:13px;font-weight:500;line-height:1.65}
+
+.booking{max-width:1080px;margin:auto;padding:56px 0;gap:46px;align-items:start}
+.booking-aside{justify-self:stretch;padding-top:0}
+.booking-aside .eyebrow{padding:0;background:transparent;color:#009b51;font-size:11px}
+.booking-aside>h2{position:relative;margin:8px 0 25px;padding-bottom:13px;color:#111;font-size:27px;letter-spacing:0}
+.booking-aside>h2:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#95d6bc}
+.booking-aside>h2 span{color:#111}
+.booking-aside>p{color:#222;font-size:15px;font-weight:500;line-height:1.65}
+.call-card{border-radius:0;background:#fff;color:#111;box-shadow:none;border:1px solid #e1e1e1}
+.call-label{color:#009b51;font-size:10px}
+.big-phone{color:#111;font-size:35px}
+.call-card>p{color:#222;font-size:12px}
+.call-button{border-radius:0;background:#009b51;font-size:12px}
+.support-list{border-radius:0;border:1px solid #e1e1e1}
+.support-list li{font-size:12px;color:#222}
+.booking-form{border:1px solid #e3e3e3;border-radius:0;box-shadow:none}
+.form-heading h3{font-size:17px;color:#111}.form-heading p{font-size:11px;color:#333}
+.submit-button{border-radius:0;background:#009b51}
+
+.footer{padding:45px 32px 0;background:#d8f3e3;color:#111}
+.footer-grid{max-width:1080px;grid-template-columns:1.1fr 1fr 1fr;gap:50px}
+.footer-brand{color:#111}.footer-brand b{color:#009b51}.footer-brand .brand-logo{background:transparent}
+.footer-grid h4{font-size:13px;color:#111}.footer-grid h4:after{content:"";display:block;width:30px;height:2px;margin-top:12px;background:#111}
+.footer-grid>div>p,.footer-grid>div:nth-child(3)>a{color:#222;font-size:12px}.footer-grid>div:nth-child(2)>p svg{color:#111}
+.footer-badges span{color:#111;border-color:#7fc9a1;font-size:10px}.footer-badges svg{color:#009b51}
+.footer-bottom{max-width:none;margin:35px -32px 0;padding:18px 32px;background:#00a854;border:0;justify-content:center;color:#fff;font-size:12px}
+.footer-bottom span:last-child{display:none}
+
+@media(max-width:760px){
+  .routes.section,.trips.section,.why.section{padding:40px 18px}
+  .routes .section-heading,.trips .section-heading,.why .section-heading{margin-bottom:23px}
+  .routes .section-heading h2,.trips .section-heading h2,.why .section-heading h2{font-size:22px;margin-bottom:16px;padding-bottom:11px}
+  .routes .section-heading>p,.trips .section-heading>p,.why .section-heading>p{font-size:13px}
+  .routes .table-wrap{overflow:hidden;border:1px solid #a8a8a8}
+  .routes th{font-size:10px}.routes td,.routes td:first-child{font-size:12px}
+  .routes .price-notes{grid-template-columns:1fr}.routes .price-notes p{font-size:11px}
+  .trip-grid{grid-template-columns:1fr;gap:28px}.trip-image{height:210px}.trip-body h3{font-size:19px}.trip-desc{font-size:13px}.trip-body li{font-size:12px}
+  .benefit-grid{grid-template-columns:1fr}.benefit-card{border-right:0;border-bottom:1px solid #e5e5e5}.benefit-card:last-child{border-bottom:0}.benefit-card h3{font-size:16px}
+  .booking{display:grid;margin:0;padding:40px 18px;gap:28px}.booking-aside>h2{font-size:23px}.booking-aside>p{font-size:13px}
+  .footer{padding:35px 20px 0}.footer-grid{grid-template-columns:1fr;gap:25px}.footer-bottom{margin:30px -20px 0;padding:16px 20px;text-align:center}
+}
+
+/* Nhận diện màu xanh dương của Nhà Xe Minh Châu. */
+.routes .section-heading .eyebrow,.trips .section-heading .eyebrow,.why .section-heading .eyebrow,.booking-aside .eyebrow{color:#1565c0}
+.routes .section-heading h2:after,.trips .section-heading h2:after,.why .section-heading h2:after,.booking-aside>h2:after{background:#a9cff5}
+.routes th{background:#1976d2;color:#fff}
+.routes .table-book,.trip-button,.call-button,.submit-button{background:#1565c0}
+.routes .table-book:hover,.trip-button:hover,.call-button:hover,.submit-button:hover{background:#0d4f9e}
+.routes .price-notes>div{background:#eef6ff}
+.benefit-icon{color:#1565c0}
+.benefit-card h3{color:#1565c0}
+.call-label{color:#1565c0}
+.footer{background:#e5f1ff}
+.footer-brand b{color:#1565c0}
+.footer-badges span{border-color:#8bbce9}
+.footer-badges svg{color:#1565c0}
+.footer-bottom{background:#1565c0}
+
+/* Bảng giá chỉ còn bốn cột thông tin. */
+@media(max-width:760px){
+  .routes .table-wrap th:last-child{display:table-cell}
+}
